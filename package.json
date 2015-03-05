@@ -21,6 +21,9 @@
     "express-session": "*",
     "connect-redis": "latest"
   },
+  "scripts": {
+  "start": "node server.js"
+  },
   "devDependencies": {},
   "bundleDependencies": [],
   "private": true,
