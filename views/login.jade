@@ -1,0 +1,11 @@
+html(ng-app="test")
+ script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js")
+ script(src="http://cdn.socket.io/socket.io-1.3.4.js")
+ script(src="/js/funciones.js")
+
+ div(ng-controller="main")
+  input(ng-model="val")
+  button(ng-click="enviar(val)")
+  ul(ng-repeat="t in lista")
+   li {{t.msg}}
+ #element

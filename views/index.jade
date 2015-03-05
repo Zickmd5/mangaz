@@ -1,0 +1,18 @@
+doctype html
+html(ng-app="test")
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    script(src="/js/angular.min.js")
+    script(src="/js/socket-io.js")
+    script(src="/js/funciones.js")
+  body
+   div(ng-controller="main")
+    if !id
+     form(method="POST", ng-submit="click(usuar)")
+      input(type="text", ng-model="usuar", name="usuario")
+      input(type="submit")
+    else
+     |#{id}
+ 
+
